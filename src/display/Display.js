@@ -6,6 +6,7 @@ const Display = ({ closed, locked }) => {
 
   return (
     <div className="display panel">
+       Gate Status =>
       <div className={lockedClass}>{locked ? 'Locked' : 'Unlocked'}</div>
       <div className={closedClass}>{closed ? 'Closed' : 'Open'}</div>
     </div>
@@ -13,7 +14,7 @@ const Display = ({ closed, locked }) => {
 };
 
 Display.defaultProps = {
-  closed: false,
+  closed: true,
   locked: false,
 };
 
